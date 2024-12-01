@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: samba-ad
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: samba-ad
+  template:
+    metadata:
+      labels:
+        app: samba-ad
+    spec:
+      containers:
+      - name: samba-ad
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        env:
+        - name: DOMAIN
+          value: "{{ .Values.env.DOMAIN }}"
+        - name: ADMIN_PASSWORD
+          value: "{{ .Values.env.ADMIN_PASSWORD }}"
+        ports:
+        - containerPort: 389
