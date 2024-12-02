@@ -1,5 +1,4 @@
 {
-  "catalog":
     "name": "Samba-AD",
     "location": "https://github.com/RaSho-La/Samba-ad-catalog.git",
     "preferred_trains": [
