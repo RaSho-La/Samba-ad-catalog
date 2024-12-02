@@ -1,9 +1,9 @@
 {
   "catalog": {
     "name": "Samba-AD",
-    "description": "A catalog for deploying Samba AD",
-    "version": "1.0.0",
-    "k8s_version": ">=1.19.0",
-    "repo": "https://github.com/RaSho-La/Samba-ad-catalog.git"
+    "repo": "https://github.com/RaSho-La/Samba-ad-catalog.git",
+    "preferred_trains" : [
+      "stable"
+    ]
   }
 }
