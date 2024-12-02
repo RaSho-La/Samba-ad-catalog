@@ -1,6 +1,0 @@
-apiVersion: v2
-name: samba-ad
-description: A Helm chart for deploying Samba Active Directory
-type: application
-version: 0.1.0
-appVersion: "4.18"
