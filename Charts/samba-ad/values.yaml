@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: instantlinux/samba-ad-dc
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 389
+
+env:
+  DOMAIN: example.local
+  ADMIN_PASSWORD: ChangeMe123
